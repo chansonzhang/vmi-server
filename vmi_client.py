@@ -36,7 +36,7 @@ class VMIRpcClient(object):
                                    body=str(instance_name))
         while self.response is None:
             self.connection.process_data_events()
-        return int(self.response)
+        return str(self.response)
 
 vmi_rpc = VMIRpcClient()
 
