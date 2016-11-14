@@ -35,8 +35,7 @@ def get_process_list(instance_name):
 
     LOG.debug('Out: %(out)s',
               {'out': out})
-    raw_list = out.split("\n")
-    return raw_list
+    return out
 
 def on_request(ch, method, props, body):
     instance_name = str(body)
