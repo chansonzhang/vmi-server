@@ -1,9 +1,9 @@
+#!/usr/local/bin/python
 # @Time    : 2016/11/14 15:22
 # @Author  : Zhang Chen
 # @Email    : zhangchen.shaanxi@gmail.com
 # @File    : vmi_client.py
 
-#!/usr/local/bin/python
 import pika
 import uuid
 
