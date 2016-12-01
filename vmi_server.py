@@ -22,6 +22,7 @@ def get_process_list(instance_name):
     command = "vol.py -l vmi://" + instance_name + " --profile=LinuxCentos7-3_10_0-327_36_3_el7_x86_64x64 linux_pslist"
     LOG.debug('Command: %(command)s',
               {'command': command})
+    out = ''
     try:
         out = subprocess.check_output("export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH && " + command,
                                       shell=True).decode('utf-8')
