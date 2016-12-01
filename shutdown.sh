@@ -2,7 +2,8 @@
 # @Author  : Zhang Chen
 # @Email    : zhangchen.shaanxi@gmail.com
 # @File    : shutdown.sh
-ps_to_kill=`ps -aux|grep vmi_server.py`
-for p in $ps_to_kill do
-    kill -9 `echo $p|awk '{print $2}'`
+pids=`ps -aux|grep vmi_server.py|awk '{print $2}'`
+for pid in $pids
+do
+    kill -9 $pid
 done
