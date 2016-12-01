@@ -1,7 +1,9 @@
 # @Author  : Zhang Chen
 # @Email    : zhangchen.shaanxi@gmail.com
-# @File    : vmi-server.sh
+# @File    : vmi-server
 # This script will be add to /etc/init.d/
+# chkconfig: 345 99 01
+# description: vmi-server
 start() {
         echo "Starting vmi-server"
         cd /root/vmi-server
