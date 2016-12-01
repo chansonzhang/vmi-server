@@ -3,7 +3,7 @@
 # @Email    : zhangchen.shaanxi@gmail.com
 # @File    : vmi_client.py
 
-#!/usr/bin/env python
+#!/usr/local/bin/python
 import pika
 import uuid
 
