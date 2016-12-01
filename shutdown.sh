@@ -4,5 +4,5 @@
 # @File    : shutdown.sh
 ps_to_kill=`ps -aux|grep vmi_server.py`
 for p in $ps_to_kill do
-    kill -9 `echo p|awk '{print $2}'`
+    kill -9 `echo $p|awk '{print $2}'`
 done
