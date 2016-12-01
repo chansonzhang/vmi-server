@@ -8,4 +8,4 @@ cp vmi-server /etc/init.d/
 cd /etc/init.d/
 chkconfig --add vmi-server
 chkconfig vmi-server on
-systemctl start vmi-server.service
+service restart vmi-server.service
